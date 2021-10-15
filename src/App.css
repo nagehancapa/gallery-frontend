@@ -1,0 +1,10 @@
+.card {
+  align-items: center;
+  justify-content: center;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

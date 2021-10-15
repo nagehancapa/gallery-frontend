@@ -17,24 +17,23 @@ export default function HomePage() {
   }, [dispatch, artworks.length]);
 
   return (
-    <>
+    <Container>
       <Jumbotron>
         <h1>Artworks</h1>
       </Jumbotron>
-      <Container>
-        {artworks.map((artwork) => {
-          return (
-            <ArtworkCard
-              key={artwork.id}
-              id={artwork.id}
-              imageUrl={artwork.imageUrl}
-              title={artwork.title}
-              hearts={artwork.hearts}
-              numberOfBid={artwork.bids.length}
-            />
-          );
-        })}
-      </Container>
-    </>
+
+      {artworks.map((artwork) => {
+        return (
+          <ArtworkCard
+            key={artwork.id}
+            id={artwork.id}
+            imageUrl={artwork.imageUrl}
+            title={artwork.title}
+            hearts={artwork.hearts}
+            numberOfBid={artwork.bids.length}
+          />
+        );
+      })}
+    </Container>
   );
 }

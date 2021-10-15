@@ -7,10 +7,10 @@ import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
 
-export default function Space(props) {
+export default function ArtworkCard(props) {
   return (
     <>
-      <Card border="secondary">
+      <Card border="col">
         <Col className="mt-4" md={{ span: 8, offset: 2 }}>
           <Image src={props.imageUrl} alt="preview" thumbnail />
         </Col>
